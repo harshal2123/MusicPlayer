@@ -68,16 +68,7 @@ You can also use /dplay <song name> to play a song from Deezer.</b>
 @Client.on_message(filters.command(['start', f'start@{U}']))
 async def start(client, message):
     buttons = [
-        [
-        InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-        InlineKeyboardButton('🤖 Other Bots', url='https://t.me/subin_works/122'),
-    ],
-    [
-        InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/subinps'),
-        InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
-    ],
-    [
-        InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help'),
+        
         
     ]
     ]
