@@ -159,8 +159,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         try:
             await query.edit_message_text(f"{emoji.PLAY_OR_PAUSE_BUTTON} Skipped\n\n{pl}",
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
+                
                         InlineKeyboardButton("🔄", callback_data="replay"),
                         InlineKeyboardButton("⏯", callback_data="pause"),
                         InlineKeyboardButton("⏩", callback_data="skip")
